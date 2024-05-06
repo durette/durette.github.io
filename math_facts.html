@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google" content="notranslate">
+	<meta http-equiv="Content-Language" content="en">
+	<title>MathFacts</title>
+</head>
+<body>
+<script src="math_facts.js"></script>
+<head>
+	<p>This will produce and print a list of problems for basic math fact practice.</p>
+</head>
+<body>
+	<form>
+		<div>
+			<label>Minimum Left Operand</label>
+			<input id="minLeftInput" type="number" value="1" />
+			<label>Maximum Left Operand</label>
+			<input id="maxLeftInput" type="number" value="12" />
+		</div>
+		<div>
+			<label>Operator</label>
+			<input id="operatorInput" type="text" value="&#215;" width="1" />
+		</div>
+		<div>
+			<label>Minimum Right Operand</label>
+			<input id="minRightInput" type="number" value="1" />
+			<label>Maximum Right Operand</label>
+			<input id="maxRightInput" type="number" value="12" />
+		</div>
+		<div>
+			<label>Problems per Column</label>
+			<input id="problemsPerColumnInput" type="number" value="28" />
+			<label>Columns</label>
+			<input id="columnsInput" type="number" value="3" />
+		</div>
+		<div>
+			<label>Font Size</label>
+			<input id="fontSizeInput" type="number" value="25" width="1" />
+			<label>Font Family</label>
+			<input id="fontFamilyInput" type="text" value="Courier New" width="1" />
+		</div>
+		<div>
+			<button onclick="event.preventDefault(); buildAndDisplayWindow();">Print Sheet of Facts</button>
+		</div>
+	</form>
+</body>
+</table>
+</body>
+</html>
